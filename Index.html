@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>माझी Farming App</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f8e9;
+  color: #1b5e20;
+}
+
+header {
+  background: #2e7d32;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.container {
+  padding: 15px;
+}
+
+.card {
+  background: white;
+  padding: 18px;
+  margin: 15px 0;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px #bbb;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+button {
+  background: #388e3c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:active {
+  background: #1b5e20;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#result {
+  margin-top: 15px;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌾 माझी Farming App</h1>
+  <p>शेतकऱ्यांसाठी उपयुक्त माहिती</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>🌱 पीक निवडा</h2>
+    <input type="text" id="crop" placeholder="उदा. सोयाबीन, कांदा, गहू">
+    <button onclick="showCrop()">माहिती पहा</button>
+    <div id="result"></div>
+  </div>
+
+  <div class="card">
+    <h2>💰 शेती खर्च कॅल्क्युलेटर</h2>
+
+    <input type="number" id="seed" placeholder="बियाणे खर्च ₹">
+    <input type="number" id="fertilizer" placeholder="खत खर्च ₹">
+    <input type="number" id="labour" placeholder="मजुरी खर्च ₹">
+
+    <button onclick="calculate()">एकूण खर्च काढा</button>
+
+    <div id="total"></div>
+  </div>
+
+  <div class="card">
+    <h2>📢 शेतकरी टिप</h2>
+    <p>पिकांना योग्य वेळी पाणी द्या आणि हवामानाचा अंदाज पाहून शेतीची कामे करा.</p>
+  </div>
+
+</div>
+
+<script>
+
+function showCrop() {
+
+  let crop = document.getElementById("crop").value;
+  let result = document.getElementById("result");
+
+  if (crop == "") {
+    result.innerHTML = "कृपया पिकाचे नाव लिहा.";
+  } else {
+    result.innerHTML =
+    "🌱 " + crop + " साठी योग्य माहिती लवकरच उपलब्ध होईल.";
+  }
+
+}
+
+function calculate() {
+
+  let seed = Number(document.getElementById("seed").value) || 0;
+  let fertilizer = Number(document.getElementById("fertilizer").value) || 0;
+  let labour = Number(document.getElementById("labour").value) || 0;
+
+  let total = seed + fertilizer + labour;
+
+  document.getElementById("total").innerHTML =
+  "💰 एकूण शेती खर्च: ₹" + total;
+
+}
+
+</script>
+
+</body>
+</html>
