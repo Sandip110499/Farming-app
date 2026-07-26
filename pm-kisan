@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PM-Kisan Yojana 2026: 20 वा हप्ता Status, पात्रता, अर्ज | gov-yojana</title>
+<meta name="description" content="PM Kisan Samman Nidhi Yojana. 20 वा हप्ता कधी येणार? Beneficiary Status, EKYC कसे करायचे? थेट लिंक.">
+<style>
+body{font-family:Arial,sans-serif;background:#f0fff0;margin:0;padding:0;color:#333}
+.header{background:#2e7d32;color:white;padding:15px;text-align:center}
+.container{max-width:800px;margin:20px auto;padding:15px;background:white;border-radius:10px}
+h1,h2{color:#2e7d32}
+.btn{background:#ff9800;color:white;padding:12px;display:block;text-align:center;border-radius:8px;margin:10px 0;text-decoration:none;font-weight:bold}
+.box{background:#e8f5e9;padding:15px;border-left:4px solid #2e7d32;margin:15px 0}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>🌾 PM-Kisan Samman Nidhi Yojana</h1>
+</div>
+
+<div class="container">
+  <h2>20 वा हप्ता कधी येणार?</h2>
+  <div class="box">
+    <p><b>अपेक्षित तारीख:</b> ऑक्टोबर 2026 चा पहिला आठवडा</p>
+    <p><b>रक्कम:</b> ₹2000 थेट बँक खात्यात</p>
+  </div>
+
+  <h2>Beneficiary Status कसे Check करायचे?</h2>
+  <ol>
+    <li>खालील बटणावर क्लिक करा</li>
+    <li>आपला Aadhaar नंबर किंवा Mobile नंबर टाका</li>
+    <li>Get Data वर क्लिक करा</li>
+  </ol>
+  <a href="https://pmkisan.gov.in/BeneficiaryStatus.aspx" class="btn" target="_blank">👉 Beneficiary Status Check करा</a>
+
+  <h2>EKYC करणे बंधनकारक आहे</h2>
+  <p>जर EKYC केले नाही तर हप्ता येणार नाही. OTP ने 2 मिनिटात होते.</p>
+  <a href="https://pmkisan.gov.in/eKYC.aspx" class="btn" target="_blank">👉 EKYC येथे करा</a>
+
+  <h2>पात्रता काय आहे?</h2>
+  <ul>
+    <li>शेतकऱ्याच्या नावावर शेतजमीन असावी</li>
+    <li>सरकारी नोकरी नसावी</li>
+    <li>Income Tax भरत नसावा</li>
+  </ul>
+
+  <a href="/gov-yojana/ladki-bahin.html" style="background:#d63384; color:white; padding:12px; display:block; text-align:center; border-radius:8px; margin-top:20px; text-decoration:none;">
+    👩 लाडकी बहीण योजना माहिती
+  </a>
+</div>
+</body>
+</html>
