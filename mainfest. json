@@ -1,0 +1,10 @@
+{
+  "name": "माझी Farming App",
+  "short_name": "Farming App",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f1f8e9",
+  "theme_color": "#2e7d32",
+  "description": "शेतकऱ्यांसाठी उपयुक्त Farming App",
+  "icons": []
+}
