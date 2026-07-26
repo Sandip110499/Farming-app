@@ -85,6 +85,32 @@ input {
 
   <div class="card">
     <h2>🌱 पीक निवडा</h2>
+    <!-- रोग ओळखा सेक्शन -->
+<div style="background:#fff; padding:15px; margin:15px; border-radius:10px; box-shadow:0 2px 5px #ccc;">
+  <h2>📸 रोग ओळखा</h2>
+  <p>पिकाच्या पानाचा फोटो काढा आणि तपासा</p>
+
+  <input type="file" id="photoInput" accept="image/*" capture="camera" style="margin:10px 0;">
+  <br>
+  <button onclick="checkDisease()" style="background:green; color:white; padding:10px 20px; border:none; border-radius:5px;">
+    रोग तपासा
+  </button>
+
+  <div id="result" style="margin-top:15px; font-weight:bold;"></div>
+</div>
+
+<script>
+function checkDisease() {
+  const file = document.getElementById('photoInput').files[0];
+  if(!file){
+    document.getElementById('result').innerText = "कृपया आधी फोटो निवडा";
+    return;
+  }
+  document.getElementById('result').innerText = "फोटो अपलोड झाला. आता मी AI ला पाठवून रोग सांगतो...";
+
+  // इथे नंतर AI जोडू. आत्तासाठी फोटो मला WhatsApp करा म्हणेल
+}
+</script>
     <input type="text" id="crop" placeholder="उदा. सोयाबीन, कांदा, गहू">
     <button onclick="showCrop()">माहिती पहा</button>
     <div id="result"></div>
